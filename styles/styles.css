@@ -518,10 +518,11 @@ margin-bottom: 20px;
     nav
     {
         box-shadow: none;
+       
     }
     .title-container 
     {
-        margin: 0 40px;
+        margin: 0 80px;
       
         
     }
@@ -555,17 +556,21 @@ margin-bottom: 20px;
  {
     width: 450px;
     height: 500px;
+    margin-left: 30px;
  }
  .banner-info-2 img
  {
     width: 100%;
+    margin-left: 30px;
    
  }
+
+
 
  .banner-title-1
  {
     margin-top:30px;
-    margin-right: 90px;
+    margin-right: 40px;
     width: 100%;
    
  }
@@ -598,15 +603,23 @@ margin-bottom: 20px;
     width: 90px;
  }
 
+
+ .games
+ {
+    margin: 0 35px;
+ }
+
  .games-title
  {
    
     font-size: 1.3rem;
+     
  }
  .games-title-2
  {
    
     font-size: 1.3rem;
+    
  }
  .games-des
  {
@@ -683,7 +696,7 @@ footer
 
 .link-container
 {
-    margin: 0;
+    margin: 0 20px;
     grid-template-columns: repeat(3,1fr);
 }
 
@@ -720,6 +733,54 @@ footer
 
 @media screen and (min-width:576px)  and (max-width:960px)
 {
+
+
+    .title-container ,.title-container >ul 
+ {
+    flex-direction: column;
+ }
+
+ .title-container 
+ {
+   margin: 20px 300px;
+ }
+    .nav-follow
+    {
+      padding: 3px;
+     
+    }
+    .banner-title-1
+    {
+        margin: 20px 40px;
+        
+    }
+
+    .banner-title-2
+    {
+        margin: 20px 40px;
+    }
+    .banner-info-1
+    {
+        height: 400px;
+        
+       
+    }
+
+    .banner-btn
+    {
+        margin: 0;
+        margin-left: 40px;
+    }
+    .banner-btn-1
+    {
+        padding: 7px 15px;
+        width: 80px;
+    }
+    .banner-btn-2
+    {
+        padding: 7px 15px;
+        width: 80px;
+    }
     .title-container  {
        
         margin: 0 40px;
@@ -732,4 +793,99 @@ footer
     {
         margin-top: 5px;
     }
+    
+    .banner-info-1 li
+    {
+        margin: 20px 40px;
+    }
+    .banner-info-2 img
+{
+    width: 320px;
+   
+}
+
+    
+.games-card-container,.play-container
+{
+   flex-direction: column;
+}
+
+.games-card-container
+ {
+    margin-left: 100px;
+ }
+
+
+ .play-title-info
+ {
+    margin: 0px 100px 0px 100px;
+    
+ }
+
+ .play-img-1
+ {
+     
+     margin-left: 100px;
+     width: 400px;
+ }
+ 
+ .play-img-2
+ {
+    
+     margin-top: -240px;
+     
+ }
+ 
+
+ .icon-container
+{
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
+.row p
+{
+ 
+
+font-size: 0.8rem;
+
+
+}
+.row-top
+{
+    margin: 0;
+}
+
+footer
+{
+    height: 400px;
+}
+
+.link-container
+{
+    margin: 0px 200px;
+   
+    grid-template-columns: repeat(3,1fr);
+}
+
+.socials-container
+{
+    margin: 0px 170px;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.social-btn i
+{
+    
+    margin-top: 20px;
+  
+}
+
+.policy-container
+{
+    margin: 20px 100px;
+    grid-template-columns: repeat(2,1fr);
+}
 }
