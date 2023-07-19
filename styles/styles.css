@@ -525,9 +525,14 @@ margin-bottom: 20px;
       
         
     }
-    .title-container ,.title-container >ul 
+    
+    .title-container ,.title-container >ul ,.games-card-container,.play-container
  {
     flex-direction: column;
+ }
+ .games-card-container
+ {
+    margin-left: 60px;
  }
 .banner-container
 {
@@ -540,17 +545,178 @@ margin-bottom: 20px;
  .nav-follow
  {
     display: flex;
-    width: 150px;
+    width: 160px;
    margin-left: -20px;
+   gap: 5px;
  }
 
 
+ .banner-info-1
+ {
+    width: 450px;
+    height: 500px;
+ }
  .banner-info-2 img
  {
     width: 100%;
+   
  }
 
+ .banner-title-1
+ {
+    margin-top:30px;
+    margin-right: 90px;
+    width: 100%;
+   
+ }
+
+
+ .banner-title-2
+ {
+    margin-top:30px;
+    
+    width: 100%;
+ }
+
+ .banner-btn
+ {
+    margin: 0;
+   
+ }
+ .banner-btn-1
+ {
+    margin-left: 130px;
+    font-size: 0.6rem;
+    padding: 10px;
+    width: 90px;
+ }
+ .banner-btn-2
+ {
+    
+    font-size: 0.6rem;
+    padding: 10px;
+    width: 90px;
+ }
+
+ .games-title
+ {
+   
+    font-size: 1.3rem;
+ }
+ .games-title-2
+ {
+   
+    font-size: 1.3rem;
+ }
+ .games-des
+ {
+   font-size: 0.65rem;
+ }
+
+ .card-des
+ {
+    font-size: 0.7rem;
+    width: 280px;
+ }
+
+ .play-title-info
+ {
+    margin: 0px 0px 0px 40px;
+    
+ }
+
+ .play-des
+ {
+   align-items: center;
+    width: 300px;
+    font-family: 0.6rem;
+   
+ }
+
+ .play-img-1
+{
+    width: 300px;
+    margin-left: 40px;
 }
+
+.play-img-2
+{
+    width: 150px;
+    position: relative;
+    margin-top: -140px;
+}
+
+.icon-container
+{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.row
+{
+
+    width: 83px;
+     height: 40px;
+     gap: 5px;
+     border-radius: 30px;
+background: #FFF;
+padding: 15px;
+}
+
+.row p
+{
+ 
+
+font-size: 0.6rem;
+
+
+}
+.row-top
+{
+    margin: 0;
+}
+
+
+footer
+{
+    height: 400px;
+}
+
+.link-container
+{
+    margin: 0;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.socials-container
+{
+    margin: 0px ;
+    margin-left: 100px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.social-btn i
+{
+    
+    margin-top: 20px;
+  
+}
+
+.policy-container
+{
+    margin: 0px ;
+    margin-left: 50px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.copyright
+{
+    width: 250px;
+    margin-left: 100px;
+}
+}
+
+
+
 
 @media screen and (min-width:576px)  and (max-width:960px)
 {
