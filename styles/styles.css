@@ -734,7 +734,10 @@ footer
 @media screen and (min-width:576px)  and (max-width:960px)
 {
 
-
+.games-title-info
+{
+    margin-left: -100px;
+}
     .title-container ,.title-container >ul 
  {
     flex-direction: column;
