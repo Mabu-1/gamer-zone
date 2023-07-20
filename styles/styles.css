@@ -91,7 +91,7 @@ margin-top: -7px;
 .banner-info-1
 {
     background-image: url('../images/Group\ 14.png');
-    background-repeat: no-repeat;
+   
     width: 100%;
    
    
@@ -513,55 +513,67 @@ font-weight: 500;
 margin-bottom: 20px;
 
 }
+
+
+/* responsive styles */
+
+/* mobile device */
 @media screen and (max-width:576px)
 {
+
+    /* shared responsive */
+
+    .title-container ,.title-container >ul ,.games-card-container,.play-container
+    {
+       flex-direction: column;
+    }
+
+/* nav-responsive */
     nav
     {
         box-shadow: none;
        
     }
-    .title-container 
+
+
+    .title-container  li 
     {
-        margin: 0 80px;
-      
-        
+       margin-bottom: 40px;
     }
-    
-    .title-container ,.title-container >ul ,.games-card-container,.play-container
- {
-    flex-direction: column;
- }
- .games-card-container
- {
-    margin-left: 60px;
- }
+
+    .nav-follow
+    {
+       display: flex;
+       width: 160px;
+      margin-left: -20px;
+      gap: 5px;
+    }
+ 
+
+ /* banner-responsive */
+ 
+ 
+
+
 .banner-container
 {
     flex-direction: column-reverse;
+    
 }
- .title-container  li 
- {
-    margin-bottom: 40px;
- }
- .nav-follow
- {
-    display: flex;
-    width: 160px;
-   margin-left: -20px;
-   gap: 5px;
- }
-
 
  .banner-info-1
  {
-    width: 450px;
-    height: 500px;
-    margin-left: 30px;
+    width: 350px;
+    height: 280px;
+    margin: 0 30px ;
+    
+   
+    
  }
  .banner-info-2 img
  {
-    width: 100%;
-    margin-left: 30px;
+    width: 336px;
+   margin: 0 50px ;
    
  }
 
@@ -569,8 +581,10 @@ margin-bottom: 20px;
 
  .banner-title-1
  {
-    margin-top:30px;
-    margin-right: 40px;
+   margin: 0;
+   margin-top: 30px;
+   margin-left: 90px;
+   font-size: 1.3rem;
     width: 100%;
    
  }
@@ -578,31 +592,48 @@ margin-bottom: 20px;
 
  .banner-title-2
  {
-    margin-top:30px;
-    
+    font-size: 2.5rem;
+    margin: 0;
+    margin-top:10px;
+    margin-left: 90px;
     width: 100%;
  }
-
+ .banner-info-1 li
+ {
+    margin: 10px 70px;
+    width: 300px;
+    font-size: 0.7rem;
+ }
  .banner-btn
  {
     margin: 0;
    
+   
  }
  .banner-btn-1
  {
-    margin-left: 130px;
+    margin: 0;
+    margin-left: 100px;
     font-size: 0.6rem;
     padding: 10px;
-    width: 90px;
+    width: 97px;
  }
  .banner-btn-2
  {
-    
+   
     font-size: 0.6rem;
     padding: 10px;
     width: 90px;
  }
 
+
+
+ /* Games responsive */
+ .games-card-container
+ {
+    margin: 0;
+    margin-left: 35px;
+ }
 
  .games
  {
@@ -632,12 +663,19 @@ margin-bottom: 20px;
     width: 280px;
  }
 
+
+ /* play responsive */
  .play-title-info
  {
     margin: 0px 0px 0px 40px;
     
+    
  }
-
+ .play-title
+ {
+    margin: 0;
+   
+ }
  .play-des
  {
    align-items: center;
@@ -649,7 +687,7 @@ margin-bottom: 20px;
  .play-img-1
 {
     width: 300px;
-    margin-left: 40px;
+    margin-left: 90px;
 }
 
 .play-img-2
@@ -657,8 +695,9 @@ margin-bottom: 20px;
     width: 150px;
     position: relative;
     margin-top: -140px;
+    margin-left: 30px;
 }
-
+/* icon styles */
 .icon-container
 {
     grid-template-columns: repeat(3,1fr);
@@ -682,6 +721,7 @@ padding: 15px;
 font-size: 0.6rem;
 
 
+
 }
 .row-top
 {
@@ -689,9 +729,11 @@ font-size: 0.6rem;
 }
 
 
+
+/* footer styles */
 footer
 {
-    height: 400px;
+    height: 450px;
 }
 
 .link-container
@@ -716,15 +758,16 @@ footer
 
 .policy-container
 {
-    margin: 0px ;
-    margin-left: 50px;
+    margin: 0;
+   
     grid-template-columns: repeat(2,1fr);
 }
 
 .copyright
 {
     width: 250px;
-    margin-left: 100px;
+    margin: 20px 80px;
+    
 }
 }
 
