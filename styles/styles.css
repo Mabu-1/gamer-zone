@@ -697,7 +697,7 @@ margin-bottom: 20px;
     margin-top: -140px;
     margin-left: 30px;
 }
-/* icon styles */
+/* icon responsive*/
 .icon-container
 {
     grid-template-columns: repeat(3,1fr);
@@ -730,7 +730,7 @@ font-size: 0.6rem;
 
 
 
-/* footer styles */
+/* footer responsive */
 
 
 .link-container
@@ -774,149 +774,187 @@ font-size: 0.6rem;
 @media screen and (min-width:576px)  and (max-width:960px)
 {
 
-.games-title-info
-{
-    margin-left: -100px;
-}
-    .title-container ,.title-container >ul 
- {
-    flex-direction: column;
- }
 
- .title-container 
- {
-   margin: 20px 300px;
- }
-    .nav-follow
+    /* shared responsive */
+
+    .title-container ,.title-container >ul ,.games-card-container,.play-container
     {
-      padding: 3px;
-     
-    }
-    .banner-title-1
-    {
-        margin: 20px 40px;
-        
+       flex-direction: column;
     }
 
-    .banner-title-2
+/* nav-responsive */
+    nav
     {
-        margin: 20px 40px;
-    }
-    .banner-info-1
-    {
-        height: 400px;
-        
+        box-shadow: none;
        
     }
-
-    .banner-btn
-    {
-        margin: 0;
-        margin-left: 40px;
-    }
-    .banner-btn-1
-    {
-        padding: 7px 15px;
-        width: 80px;
-    }
-    .banner-btn-2
-    {
-        padding: 7px 15px;
-        width: 80px;
-    }
-    .title-container  {
-       
-        margin: 0 40px;
-    }
-    .title-container  li
-    {
-        margin-top: 10px;
-    }
-    .nav-follow
-    {
-        margin-top: 5px;
-    }
-    
-    .banner-info-1 li
-    {
-        margin: 20px 40px;
-    }
-    .banner-info-2 img
-{
-    width: 320px;
    
-}
 
-    
-.games-card-container,.play-container
+    .title-container
+    {
+        margin: 0 200px;
+    }
+
+    .title-container  li 
+    {
+       margin-bottom: 40px;
+    }
+
+    .nav-follow
+    {
+       display: flex;
+       width: 160px;
+      margin-left: -20px;
+      gap: 5px;
+    }
+ 
+
+ /* banner-responsive */
+ 
+ 
+
+
+.banner-container
 {
-   flex-direction: column;
+    flex-direction: column-reverse;
+    
 }
 
-.games-card-container
+ .banner-info-1
  {
-    margin-left: 100px;
+    width: 500px;
+    height: 380px;
+    margin: 0 130px ;
+    
+   
+    
+ }
+ .banner-info-2 img
+ {
+    width: 500px;
+   margin: 0 130px ;
+   
  }
 
 
+
+ .banner-title-1
+ {
+   margin: 0;
+   margin-top: 30px;
+   margin-left: 170px;
+  
+    width: 100%;
+   
+ }
+
+
+ .banner-title-2
+ {
+   
+    margin: 0;
+    margin-top:10px;
+    margin-left: 170px;
+    width: 100%;
+ }
+ .banner-info-1 li
+ {
+    margin: 30px 140px;
+    width: 300px;
+    
+ }
+ .banner-btn
+ {
+    margin: 0;
+   
+   
+ }
+ .banner-btn-1
+ {
+    margin: 0;
+    margin-left: 160px;
+  
+    
+ }
+
+
+
+ /* Games responsive */
+ .games-card-container
+ {
+    margin: 0;
+    margin-left: 35px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ }
+
+ .games
+ {
+    margin: 0 35px;
+ }
+
+
+ .card-des
+ {
+    
+    width: 280px;
+ }
+
+
+ /* play responsive */
  .play-title-info
  {
-    margin: 0px 100px 0px 100px;
+  margin: 0;
+  margin-left: 200px;
+    
     
  }
+
 
  .play-img-1
- {
-     
-     margin-left: 100px;
-     width: 400px;
- }
- 
- .play-img-2
- {
-    
-     margin-top: -240px;
-     
- }
- 
-
- .icon-container
 {
-    grid-template-columns: repeat(2,1fr);
+    width: 400px;
+    margin-left: 220px;
+}
+
+.play-img-2
+{
+    width: 200px;
+    position: relative;
+    margin-top: -190px;
+    margin-left: 110px;
+}
+/* icon responsive */
+.icon-container
+{
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 70px;
 }
 
 
 
-.row p
-{
- 
-
-font-size: 0.8rem;
-
-
-}
 .row-top
 {
     margin: 0;
+   
 }
 
-footer
-{
-    height: 400px;
-}
+
+
+/* footer styles */
+
 
 .link-container
 {
-    margin: 0px 200px;
-   
+    margin: 0 50px;
     grid-template-columns: repeat(3,1fr);
 }
 
 .socials-container
 {
-    margin: 0px 170px;
+    margin: 0px ;
+    margin-left: 150px;
     grid-template-columns: repeat(3,1fr);
-    
 }
 
 .social-btn i
@@ -928,7 +966,10 @@ footer
 
 .policy-container
 {
-    margin: 20px 100px;
+    margin: 0 150px;
+   margin-top: 30px;
     grid-template-columns: repeat(2,1fr);
 }
+
+
 }
