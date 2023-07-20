@@ -414,7 +414,7 @@ footer
 {
     background: #0B0223;
     align-items: center;
-    height: 320px;
+  
 }
 
 
@@ -731,10 +731,7 @@ font-size: 0.6rem;
 
 
 /* footer styles */
-footer
-{
-    height: 450px;
-}
+
 
 .link-container
 {
@@ -759,7 +756,7 @@ footer
 .policy-container
 {
     margin: 0;
-   
+   margin-top: 30px;
     grid-template-columns: repeat(2,1fr);
 }
 
